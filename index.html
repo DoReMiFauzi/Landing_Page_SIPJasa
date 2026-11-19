@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratis Panduan Perawatan Rumah & Voucher Rp 50.000 | SIPJasa</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans & Caveat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        handwriting: ['"Caveat"', 'cursive'],
+                    },
+                    colors: {
+                        navy: {
+                            50: '#E6EFFD',
+                            100: '#D3E3FC',
+                            200: '#B5D0FA',
+                            700: '#0E3574',
+                            800: '#0B2D63',
+                            900: '#07224E',
+                            950: '#041533',
+                        },
+                        gold: {
+                            300: '#FDE047',
+                            400: '#FACC15',
+                            500: '#F5C12E',
+                            600: '#DDA714',
+                        },
+                        verified: {
+                            50: '#F0FDF4',
+                            100: '#DCFCE7',
+                            600: '#16A34A',
+                            700: '#15803D',
+                        }
+                    },
+                    boxShadow: {
+                        'lead': '0 25px 60px -15px rgba(7, 34, 78, 0.22)',
+                        'card': '0 8px 30px -5px rgba(7, 34, 78, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-hero-surface {
+            background: radial-gradient(circle at 82% 18%, rgba(230, 239, 253, 0.95) 0%, rgba(248, 250, 252, 0.98) 50%, #ffffff 100%);
+        }
+        @keyframes popIn {
+            0% { opacity: 0; transform: scale(0.92); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        .animate-pop-in {
+            animation: popIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes checkBounce {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+        .animate-check-bounce {
+            animation: checkBounce 0.6s ease-in-out;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-white antialiased selection:bg-gold-400 selection:text-navy-900 overflow-x-hidden">
+
+    <!-- ================= 1. MINIMALIST TOP BAR (TANPA DISTRAKSI MENU) ================= -->
+    <header class="bg-white/95 backdrop-blur-md border-b border-slate-100 sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            <!-- Logo SIPJasa -->
+            <a href="#" class="flex items-center gap-3 group focus:outline-none">
+                <div class="w-10 h-10 sm:w-11 sm:h-11 flex items-center justify-center shrink-0">
+                    <svg viewBox="0 0 64 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                        <!-- Atap Biru Navy -->
+                        <path d="M4 26L32 4L60 26" stroke="#07224E" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Badan Rumah Kuning Emas -->
+                        <path d="M12 27L32 11.5L52 27V48C52 49.6569 50.6569 51 49 51H42V29L32 21L22 29V51H15C13.3431 51 12 49.6569 12 48V27Z" fill="#F5C12E"/>
+                        <!-- 4 Kotak Jendela Kecil di Tengah -->
+                        <rect x="26.5" y="33" width="4.5" height="4.5" rx="0.8" fill="#07224E"/>
+                        <rect x="33" y="33" width="4.5" height="4.5" rx="0.8" fill="#07224E"/>
+                        <rect x="26.5" y="39.5" width="4.5" height="4.5" rx="0.8" fill="#07224E"/>
+                        <rect x="33" y="39.5" width="4.5" height="4.5" rx="0.8" fill="#07224E"/>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl sm:text-2xl font-extrabold tracking-tight leading-none">
+                        <span class="text-navy-900">SIP</span><span class="text-gold-500">Jasa</span>
+                    </span>
+                    <span class="text-[10px] sm:text-[11px] font-medium text-slate-500 mt-0.5">
+                        Hubungkan Kebutuhan, Temukan Solusinya
+                    </span>
+                </div>
+            </a>
+
+            <!-- Right Trust Badge Only -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-verified-50 border border-verified-600/20 text-verified-700 shadow-2xs">
+                <i data-lucide="shield-check" class="w-4 h-4 sm:w-5 sm:h-5 text-verified-700 shrink-0"></i>
+                <span class="text-xs sm:text-sm font-extrabold tracking-tight">100% Mitra Terverifikasi Admin</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= 2. HERO LEAD MAGNET SECTION (TWO-COLUMN LAYOUT) ================= -->
+    <section class="bg-hero-surface pt-10 pb-16 lg:pt-14 lg:pb-24 relative overflow-hidden">
+        <!-- Decorative Background Orbs -->
+        <div class="absolute -top-24 right-0 w-[480px] h-[480px] bg-navy-100/70 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+        <div class="absolute bottom-0 -left-24 w-96 h-96 bg-gold-400/15 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+                
+                <!-- KOLOM KIRI: Value Proposition & Hook -->
+                <div class="lg:col-span-7 space-y-6 pt-2">
+                    <!-- Pill Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-navy-900 text-gold-400 text-xs sm:text-sm font-extrabold tracking-wide shadow-sm">
+                        <i data-lucide="gift" class="w-4 h-4 text-gold-400"></i>
+                        <span>GRATIS PANDUAN &amp; VOUCHER PENGGUNA BARU</span>
+                    </div>
+
+                    <!-- Headline Besar -->
+                    <h1 class="text-3xl sm:text-5xl lg:text-[50px] font-extrabold text-navy-900 leading-[1.16] tracking-tight">
+                        Temukan Mitra Jasa Rumah Tangga dengan 
+                        <span class="inline-block bg-gold-500 text-navy-900 px-3.5 py-1 rounded-2xl shadow-xs transform -rotate-1 mt-1">
+                            Lebih Mudah!
+                        </span>
+                    </h1>
+
+                    <!-- Sub-headline Penawaran Lead Magnet -->
+                    <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-medium bg-white/80 border border-navy-100 rounded-2xl p-4 sm:p-5 shadow-2xs">
+                        Dapatkan <strong class="text-navy-900">Gratis E-Book "Checklist Perawatan Rumah &amp; Standar Tarif Jasa 2026"</strong> + 
+                        <span class="inline-block bg-verified-100 text-verified-700 font-extrabold px-2 py-0.5 rounded-lg">Voucher Diskon Rp 50.000</span> 
+                        untuk Pemesanan Pertama Anda.
+                    </p>
+
+                    <!-- 4 Poin Manfaat Lead Magnet & Platform (Ikon Bulat Biru Navy) -->
+                    <div class="space-y-3.5 pt-1">
+                        <!-- Poin 1 -->
+                        <div class="flex items-start gap-3.5 bg-navy-50/90 border border-navy-100 p-3.5 rounded-2xl transition-transform hover:translate-x-1">
+                            <div class="w-10 h-10 rounded-full bg-navy-900 text-white flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
+                                <i data-lucide="book-open-check" class="w-5 h-5 text-gold-400"></i>
+                            </div>
+                            <p class="text-sm sm:text-base font-bold text-navy-900 leading-snug">
+                                Panduan Lengkap Standar Tarif (Kebersihan, Service AC, Perbaikan Pipa, Pertukangan)
+                            </p>
+                        </div>
+
+                        <!-- Poin 2 -->
+                        <div class="flex items-start gap-3.5 bg-navy-50/90 border border-navy-100 p-3.5 rounded-2xl transition-transform hover:translate-x-1">
+                            <div class="w-10 h-10 rounded-full bg-navy-900 text-white flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
+                                <i data-lucide="clipboard-check" class="w-5 h-5 text-gold-400"></i>
+                            </div>
+                            <p class="text-sm sm:text-base font-bold text-navy-900 leading-snug">
+                                Checklist Inspeksi Rumah Bulanan agar Bebas Kerusakan Mendadak
+                            </p>
+                        </div>
+
+                        <!-- Poin 3 -->
+                        <div class="flex items-start gap-3.5 bg-navy-50/90 border border-navy-100 p-3.5 rounded-2xl transition-transform hover:translate-x-1">
+                            <div class="w-10 h-10 rounded-full bg-navy-900 text-white flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
+                                <i data-lucide="badge-check" class="w-5 h-5 text-gold-400"></i>
+                            </div>
+                            <p class="text-sm sm:text-base font-bold text-navy-900 leading-snug">
+                                Akses Langsung ke Mitra yang Telah Melalui Proses Verifikasi Admin
+                            </p>
+                        </div>
+
+                        <!-- Poin 4 -->
+                        <div class="flex items-start gap-3.5 bg-navy-50/90 border border-navy-100 p-3.5 rounded-2xl transition-transform hover:translate-x-1">
+                            <div class="w-10 h-10 rounded-full bg-navy-900 text-white flex items-center justify-center shrink-0 mt-0.5 shadow-xs">
+                                <i data-lucide="banknote" class="w-5 h-5 text-gold-400"></i>
+                            </div>
+                            <p class="text-sm sm:text-base font-bold text-navy-900 leading-snug">
+                                Voucher Potongan Harga + Jaminan Pembayaran Tunai Setelah Pekerjaan Selesai
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Handwritten Accent Note -->
+                    <div class="flex items-center gap-3 pt-2 text-navy-900">
+                        <span class="font-handwriting text-2xl sm:text-3xl font-bold -rotate-1 text-navy-800">
+                            Cari Jasa Rumah Tangga Jadi Lebih Mudah!
+                        </span>
+                        <span class="text-xs font-bold bg-gold-400/30 text-navy-900 px-3 py-1 rounded-full">
+                            Sudah diunduh 3.400+ Pemilik Rumah
+                        </span>
+                    </div>
+                </div>
+
+                <!-- KOLOM KANAN: Interactive Lead Capture Card (Elevated & High-Contrast) -->
+                <div class="lg:col-span-5" id="claim-card-wrapper">
+                    <div class="bg-white rounded-[32px] shadow-lead border-2 border-navy-900/10 overflow-hidden relative">
+                        <!-- Top Accent Bar -->
+                        <div class="bg-navy-900 px-6 py-4 text-white flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-gold-400 animate-ping"></span>
+                                <span class="text-xs font-extrabold uppercase tracking-wider text-gold-400">Penawaran Terbatas Pengguna Baru</span>
+                            </div>
+                            <span class="text-xs font-bold bg-navy-800 px-2.5 py-1 rounded-lg border border-navy-700">GRATIS 100%</span>
+                        </div>
+
+                        <!-- STATE 1: FORM INPUT LEAD MAGNET -->
+                        <div id="lead-form-container" class="p-6 sm:p-8">
+                            <div class="mb-6">
+                                <h2 class="text-xl sm:text-2xl font-extrabold text-navy-900 leading-snug">
+                                    Klaim Panduan Gratis &amp; Voucher Rp 50.000 Sekarang!
+                                </h2>
+                                <p class="text-xs sm:text-sm text-slate-600 mt-1.5">
+                                    Isi data singkat di bawah, link unduhan &amp; kode promo langsung dikirim.
+                                </p>
+                            </div>
+
+                            <form id="lead-capture-form" onsubmit="handleLeadSubmit(event)" class="space-y-4" novalidate>
+                                <!-- Nama Lengkap -->
+                                <div>
+                                    <label for="lead-name" class="block text-xs font-extrabold text-navy-900 uppercase tracking-wider mb-1.5">
+                                        Nama Lengkap <span class="text-red-500">*</span>
+                                    </label>
+                                    <div class="relative">
+                                        <i data-lucide="user" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+                                        <input 
+                                            type="text" 
+                                            id="lead-name" 
+                                            placeholder="Masukkan nama lengkap Anda" 
+                                            class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 text-sm font-semibold text-navy-900 placeholder-slate-400 focus:outline-none focus:border-navy-900 focus:ring-2 focus:ring-navy-900/10 transition-all"
+                                        >
+                                    </div>
+                                    <p id="err-name" class="hidden text-xs text-red-600 font-semibold mt-1">Mohon masukkan nama lengkap Anda.</p>
+                                </div>
+
+                                <!-- Nomor WhatsApp Aktif / Email -->
+                                <div>
+                                    <label for="lead-contact" class="block text-xs font-extrabold text-navy-900 uppercase tracking-wider mb-1.5">
+                                        Nomor WhatsApp Aktif / Email <span class="text-red-500">*</span>
+                                    </label>
+                                    <div class="relative">
+                                        <i data-lucide="smartphone" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+                                        <input 
+                                            type="text" 
+                                            id="lead-contact" 
+                                            placeholder="Contoh: 081234567890 atau nama@email.com" 
+                                            class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 text-sm font-semibold text-navy-900 placeholder-slate-400 focus:outline-none focus:border-navy-900 focus:ring-2 focus:ring-navy-900/10 transition-all"
+                                        >
+                                    </div>
+                                    <p id="err-contact" class="hidden text-xs text-red-600 font-semibold mt-1">Masukkan nomor WhatsApp (min. 9 digit) atau alamat email yang valid.</p>
+                                </div>
+
+                                <!-- Kategori Jasa yang Paling Dibutuhkan -->
+                                <div>
+                                    <label for="lead-category" class="block text-xs font-extrabold text-navy-900 uppercase tracking-wider mb-1.5">
+                                        Kategori Jasa yang Paling Dibutuhkan Saat Ini
+                                    </label>
+                                    <div class="relative">
+                                        <i data-lucide="wrench" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+                                        <select 
+                                            id="lead-category" 
+                                            class="w-full pl-10 pr-10 py-3 rounded-xl border border-slate-300 text-sm font-bold text-navy-900 bg-slate-50 focus:bg-white focus:outline-none focus:border-navy-900 focus:ring-2 focus:ring-navy-900/10 appearance-none transition-all"
+                                        >
+                                            <option value="Kebersihan Rumah">Kebersihan Rumah</option>
+                                            <option value="Service AC">Service AC</option>
+                                            <option value="Perbaikan Pipa">Perbaikan Pipa</option>
+                                            <option value="Pertukangan">Pertukangan</option>
+                                            <option value="Semua Kategori" selected>Semua Kategori</option>
+                                        </select>
+                                        <i data-lucide="chevron-down" class="w-4 h-4 text-navy-900 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Tombol CTA Besar Kuning Emas (#F5C12E) -->
+                                <button 
+                                    type="submit" 
+                                    class="w-full bg-gold-500 hover:bg-gold-400 active:scale-[0.99] text-navy-900 font-extrabold text-base sm:text-lg py-4 px-6 rounded-2xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2.5 mt-2 cursor-pointer"
+                                >
+                                    <span>Kirim Panduan &amp; Klaim Voucher</span>
+                                    <i data-lucide="chevron-right" class="w-5 h-5 stroke-[3]"></i>
+                                </button>
+
+                                <!-- Micro-copy Keamanan di bawah tombol -->
+                                <div class="flex items-center justify-center gap-1.5 text-center pt-1 text-[11px] sm:text-xs font-semibold text-slate-500">
+                                    <i data-lucide="lock" class="w-3.5 h-3.5 text-verified-700 shrink-0"></i>
+                                    <span>Identitas aman • Tanpa spam • Pembayaran tunai setelah jasa selesai.</span>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- STATE 2: SUCCESS / UNLOCKED LEAD MAGNET & VOUCHER -->
+                        <div id="lead-success-container" class="hidden p-6 sm:p-8 text-center space-y-5 animate-pop-in">
+                            <!-- Animasi Centang Hijau -->
+                            <div class="w-16 h-16 rounded-full bg-verified-100 text-verified-700 flex items-center justify-center mx-auto shadow-inner animate-check-bounce">
+                                <i data-lucide="check-circle-2" class="w-10 h-10 stroke-[2.5]"></i>
+                            </div>
+
+                            <div>
+                                <span class="inline-block px-3 py-1 rounded-full bg-verified-50 text-verified-700 text-xs font-extrabold mb-2">
+                                    Berhasil Diklaim!
+                                </span>
+                                <h3 class="text-xl sm:text-2xl font-extrabold text-navy-900">
+                                    Halo, <span id="success-user-name" class="text-navy-800">Pelanggan</span>!
+                                </h3>
+                                <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                                    Panduan &amp; voucher untuk kebutuhan <strong id="success-user-category" class="text-navy-900">Semua Kategori</strong> telah siap digunakan.
+                                </p>
+                            </div>
+
+                            <!-- Kode Voucher Eksklusif Copyable Box -->
+                            <div class="bg-navy-50 border-2 border-dashed border-navy-900/30 rounded-2xl p-4 space-y-2">
+                                <span class="text-[11px] font-extrabold uppercase tracking-wider text-slate-500 block">
+                                    Kode Voucher Diskon Rp 50.000 Anda
+                                </span>
+                                <div class="flex items-center justify-between bg-white px-4 py-2.5 rounded-xl border border-navy-100 shadow-2xs">
+                                    <span id="voucher-code-text" class="font-mono text-lg sm:text-xl font-extrabold tracking-widest text-navy-900 select-all">
+                                        SIPJASA50
+                                    </span>
+                                    <button 
+                                        type="button" 
+                                        onclick="copyVoucherCode()" 
+                                        id="copy-voucher-btn"
+                                        class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-navy-900 hover:bg-navy-800 text-gold-400 text-xs font-extrabold transition-colors cursor-pointer"
+                                    >
+                                        <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                                        <span id="copy-btn-label">Salin Kode</span>
+                                    </button>
+                                </div>
+                                <p class="text-[11px] text-verified-700 font-bold">
+                                    ✓ Berlaku untuk pemesanan pertama • Bayar tunai setelah selesai
+                                </p>
+                            </div>
+
+                            <!-- Tombol Unduh E-Book PDF & Pratinjau -->
+                            <div class="space-y-2.5 pt-1">
+                                <button 
+                                    type="button" 
+                                    onclick="triggerEbookDownload()" 
+                                    class="w-full bg-gold-500 hover:bg-gold-400 text-navy-900 font-extrabold text-sm sm:text-base py-3.5 px-5 rounded-2xl shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
+                                >
+                                    <i data-lucide="download" class="w-5 h-5"></i>
+                                    <span>Unduh E-Book PDF Checklist &amp; Tarif (2.4 MB)</span>
+                                </button>
+
+                                <button 
+                                    type="button" 
+                                    onclick="openPreviewModal()" 
+                                    class="w-full bg-white hover:bg-slate-50 text-navy-900 border border-slate-200 font-bold text-xs sm:text-sm py-2.5 px-4 rounded-xl transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+                                >
+                                    <i data-lucide="eye" class="w-4 h-4 text-navy-700"></i>
+                                    <span>Buka Pratinjau Isi Checklist Sekarang</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 3. PREVIEW ISI LEAD MAGNET (APA YANG AKAN ANDA DAPATKAN) ================= -->
+    <section class="py-16 sm:py-20 bg-slate-50 border-t border-slate-200/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-navy-100 text-navy-900 text-xs font-extrabold uppercase tracking-wider mb-3">
+                    Intip Isi Panduan Gratis
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-navy-900 tracking-tight">
+                    Apa yang Akan Anda Dapatkan di Dalam E-Book?
+                </h2>
+                <p class="text-sm sm:text-base text-slate-600 mt-3">
+                    Dirancang khusus oleh tim ahli SIPJasa agar Anda tidak salah memilih tukang dan terhindar dari biaya perbaikan tak terduga.
+                </p>
+            </div>
+
+            <!-- Two Visual Preview Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                
+                <!-- Preview Card 1: Checklist Inspeksi Rumah Bulanan -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-card border border-slate-200/80 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-3 mb-5 pb-4 border-b border-slate-100">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-2xl bg-navy-900 text-gold-400 flex items-center justify-center font-extrabold">
+                                    01
+                                </div>
+                                <div>
+                                    <h3 class="font-extrabold text-lg text-navy-900">Checklist Perawatan Rumah</h3>
+                                    <p class="text-xs text-slate-500">Panduan Inspeksi Rutin Bulanan &amp; 3 Bulanan</p>
+                                </div>
+                            </div>
+                            <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-navy-50 text-navy-900">Bab 1 - 2</span>
+                        </div>
+
+                        <!-- Interactive Sample Checklist Items -->
+                        <div class="space-y-3">
+                            <label class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 hover:bg-navy-50/60 cursor-pointer transition-colors">
+                                <input type="checkbox" checked class="mt-1 w-4 h-4 accent-navy-900 rounded">
+                                <div class="text-xs sm:text-sm">
+                                    <span class="font-bold text-navy-900 block">Filter &amp; Pembuangan Air AC Split</span>
+                                    <span class="text-slate-500">Bersihkan filter tiap 2 minggu &amp; cuci menyeluruh tiap 3 bulan agar hemat listrik.</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 hover:bg-navy-50/60 cursor-pointer transition-colors">
+                                <input type="checkbox" checked class="mt-1 w-4 h-4 accent-navy-900 rounded">
+                                <div class="text-xs sm:text-sm">
+                                    <span class="font-bold text-navy-900 block">Saluran Wastafel &amp; Floor Drain Kamar Mandi</span>
+                                    <span class="text-slate-500">Cek aliran pembuangan lemak/rambut sebelum terjadi penyumbatan total.</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 hover:bg-navy-50/60 cursor-pointer transition-colors">
+                                <input type="checkbox" class="mt-1 w-4 h-4 accent-navy-900 rounded">
+                                <div class="text-xs sm:text-sm">
+                                    <span class="font-bold text-navy-900 block">Sealant Atap, Talang Air &amp; Engsel Pintu</span>
+                                    <span class="text-slate-500">Inspeksi dini sebelum musim hujan untuk mencegah rembesan plafon.</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-slate-500">Total 24 Poin Pemeriksaan Praktis</span>
+                        <button onclick="scrollToClaimForm()" class="text-xs sm:text-sm font-extrabold text-navy-900 hover:text-gold-600 inline-flex items-center gap-1 cursor-pointer">
+                            <span>Dapatkan Versi Lengkap</span>
+                            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Preview Card 2: Daftar Standar Tarif Transparan 2026 -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-card border border-slate-200/80 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-3 mb-5 pb-4 border-b border-slate-100">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-2xl bg-gold-500 text-navy-900 flex items-center justify-center font-extrabold">
+                                    02
+                                </div>
+                                <div>
+                                    <h3 class="font-extrabold text-lg text-navy-900">Standar Tarif Transparan 2026</h3>
+                                    <p class="text-xs text-slate-500">Acuan Harga Wajar Jasa Rumah Tangga</p>
+                                </div>
+                            </div>
+                            <span class="text-xs font-extrabold px-3 py-1 rounded-full bg-verified-50 text-verified-700">Update 2026</span>
+                        </div>
+
+                        <!-- Sample Rate Table -->
+                        <div class="divide-y divide-slate-100 text-xs sm:text-sm">
+                            <div class="py-3 flex items-center justify-between">
+                                <div class="flex items-center gap-2.5">
+                                    <span class="w-8 h-8 rounded-lg bg-navy-50 text-navy-900 flex items-center justify-center">
+                                        <i data-lucide="sparkles" class="w-4 h-4"></i>
+                                    </span>
+                                    <div>
+                                        <p class="font-bold text-navy-900">Kebersihan Rumah Harian</p>
+                                        <p class="text-[11px] text-slate-500">Durasi 2 Jam • Alat Standar</p>
+                                    </div>
+                                </div>
+                                <span class="font-extrabold text-navy-900 bg-slate-100 px-3 py-1 rounded-lg">Rp 120.000</span>
+                            </div>
+
+                            <div class="py-3 flex items-center justify-between">
+                                <div class="flex items-center gap-2.5">
+                                    <span class="w-8 h-8 rounded-lg bg-navy-50 text-navy-900 flex items-center justify-center">
+                                        <i data-lucide="snowflake" class="w-4 h-4"></i>
+                                    </span>
+                                    <div>
+                                        <p class="font-bold text-navy-900">Cuci Service AC Split</p>
+                                        <p class="text-[11px] text-slate-500">0.5 - 2 PK • Indoor &amp; Outdoor</p>
+                                    </div>
+                                </div>
+                                <span class="font-extrabold text-navy-900 bg-slate-100 px-3 py-1 rounded-lg">Rp 75.000</span>
+                            </div>
+
+                            <div class="py-3 flex items-center justify-between">
+                                <div class="flex items-center gap-2.5">
+                                    <span class="w-8 h-8 rounded-lg bg-navy-50 text-navy-900 flex items-center justify-center">
+                                        <i data-lucide="droplets" class="w-4 h-4"></i>
+                                    </span>
+                                    <div>
+                                        <p class="font-bold text-navy-900">Perbaikan Pipa &amp; Kran Bocor</p>
+                                        <p class="text-[11px] text-slate-500">Per Titik Pengerjaan</p>
+                                    </div>
+                                </div>
+                                <span class="font-extrabold text-navy-900 bg-slate-100 px-3 py-1 rounded-lg">Rp 95.000</span>
+                            </div>
+
+                            <div class="py-3 flex items-center justify-between">
+                                <div class="flex items-center gap-2.5">
+                                    <span class="w-8 h-8 rounded-lg bg-navy-50 text-navy-900 flex items-center justify-center">
+                                        <i data-lucide="wrench" class="w-4 h-4"></i>
+                                    </span>
+                                    <div>
+                                        <p class="font-bold text-navy-900">Pertukangan &amp; Perbaikan Ringan</p>
+                                        <p class="text-[11px] text-slate-500">Listrik, Pintu, Rak &amp; Atap</p>
+                                    </div>
+                                </div>
+                                <span class="font-extrabold text-navy-900 bg-slate-100 px-3 py-1 rounded-lg">Rp 125.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-bold text-verified-700">Hemat Rp 50.000 dengan Voucher Pengguna Baru!</span>
+                        <button onclick="scrollToClaimForm()" class="text-xs sm:text-sm font-extrabold text-navy-900 hover:text-gold-600 inline-flex items-center gap-1 cursor-pointer">
+                            <span>Klaim Voucher</span>
+                            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fitur Inti SIPJasa Ribbon (Sesuai Poster) -->
+            <div class="mt-12 bg-gold-500 text-navy-900 rounded-full py-4 px-6 sm:px-10 shadow-md flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-center font-extrabold text-base sm:text-xl tracking-tight">
+                <span class="flex items-center gap-2">
+                    <i data-lucide="check-circle" class="w-5 h-5 text-navy-900"></i>
+                    Pilih Layanan
+                </span>
+                <span class="text-navy-900/50 font-black">—</span>
+                <span class="flex items-center gap-2">
+                    <i data-lucide="calendar-days" class="w-5 h-5 text-navy-900"></i>
+                    Atur Jadwal
+                </span>
+                <span class="text-navy-900/50 font-black">—</span>
+                <span class="flex items-center gap-2">
+                    <i data-lucide="activity" class="w-5 h-5 text-navy-900"></i>
+                    Pantau Pesanan
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 4. STRIP KEAMANAN & KEPERCAYAAN (SESUAI POSTER) ================= -->
+    <section class="py-16 bg-navy-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-navy-50 text-navy-900 rounded-[32px] p-6 sm:p-10 shadow-2xl border border-navy-200">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 pb-5 border-b border-navy-200/70">
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-2xl bg-verified-700 text-white flex items-center justify-center shadow-xs shrink-0">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900">Keamanan &amp; Kepercayaan</h2>
+                            <p class="text-xs sm:text-sm text-slate-600">Perlindungan menyeluruh untuk setiap pemesanan jasa rumah tangga</p>
+                        </div>
+                    </div>
+                    <button onclick="scrollToClaimForm()" class="px-5 py-2.5 rounded-xl bg-navy-900 hover:bg-navy-800 text-gold-400 text-xs sm:text-sm font-extrabold transition-colors self-start sm:self-auto cursor-pointer">
+                        Klaim Voucher Sekarang &rarr;
+                    </button>
+                </div>
+
+                <!-- 3 Pilar Keamanan -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-4 md:divide-x md:divide-slate-300">
+                    <!-- Pilar 1 -->
+                    <div class="flex flex-col items-center text-center px-3">
+                        <div class="w-16 h-16 rounded-2xl bg-white text-navy-900 flex items-center justify-center mb-4 shadow-sm">
+                            <i data-lucide="id-card" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-base sm:text-lg font-extrabold text-navy-900">
+                            Identitas Mitra Diverifikasi Admin
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+                            Setiap mitra wajib melalui verifikasi identitas resmi dan uji keahlian sebelum menerima pesanan.
+                        </p>
+                    </div>
+
+                    <!-- Pilar 2 -->
+                    <div class="flex flex-col items-center text-center px-3 md:pl-6">
+                        <div class="w-16 h-16 rounded-2xl bg-white text-navy-900 flex items-center justify-center mb-4 shadow-sm">
+                            <i data-lucide="settings-2" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-base sm:text-lg font-extrabold text-navy-900">
+                            Layanan Baru Diperiksa Admin
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+                            Setiap kategori jasa dan standar tarif diperiksa Admin demi menjaga transparansi &amp; kualitas pengerjaan.
+                        </p>
+                    </div>
+
+                    <!-- Pilar 3 -->
+                    <div class="flex flex-col items-center text-center px-3 md:pl-6">
+                        <div class="w-16 h-16 rounded-2xl bg-white text-navy-900 flex items-center justify-center mb-4 shadow-sm">
+                            <i data-lucide="bar-chart-3" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-base sm:text-lg font-extrabold text-navy-900">
+                            Status Pesanan Dapat Dipantau Pelanggan
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+                            Pantau status kedatangan mitra hingga pengerjaan selesai, dan bayar tunai setelah Anda puas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 5. FOOTER SINGKAT & BERSIH ================= -->
+    <footer class="bg-navy-950 text-white py-8 border-t border-navy-800 relative overflow-hidden">
+        <!-- Decorative House Corner Accent -->
+        <div class="hidden sm:block absolute -bottom-3 right-6 opacity-90 pointer-events-none">
+            <svg width="120" height="82" viewBox="0 0 160 110" fill="none">
+                <path d="M10 65L80 15L150 65" stroke="#F5C12E" stroke-width="10" stroke-linecap="round"/>
+                <path d="M22 72L80 30L138 72" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+                <rect x="66" y="64" width="11" height="11" fill="#FFFFFF"/>
+                <rect x="83" y="64" width="11" height="11" fill="#FFFFFF"/>
+                <rect x="66" y="81" width="11" height="11" fill="#FFFFFF"/>
+                <rect x="83" y="81" width="11" height="11" fill="#FFFFFF"/>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
+            <div class="flex items-center gap-3.5">
+                <svg viewBox="0 0 64 56" fill="none" class="w-9 h-9 shrink-0">
+                    <path d="M4 26L32 4L60 26" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 27L32 11.5L52 27V50H12V27Z" fill="#F5C12E"/>
+                    <rect x="26.5" y="33" width="4.5" height="4.5" rx="0.8" fill="#041533"/>
+                    <rect x="33" y="33" width="4.5" height="4.5" rx="0.8" fill="#041533"/>
+                    <rect x="26.5" y="39.5" width="4.5" height="4.5" rx="0.8" fill="#041533"/>
+                    <rect x="33" y="39.5" width="4.5" height="4.5" rx="0.8" fill="#041533"/>
+                </svg>
+                <div class="flex items-center gap-3">
+                    <span class="text-xl font-extrabold tracking-tight">
+                        <span class="text-white">SIP</span><span class="text-gold-500">Jasa</span>
+                    </span>
+                    <span class="text-navy-700 font-bold">|</span>
+                    <span class="text-xs sm:text-sm italic text-blue-100">Marketplace Jasa Rumah Tangga</span>
+                </div>
+            </div>
+
+            <p class="text-xs text-blue-300/75 text-center sm:text-right">
+                &copy; 2026 SIPJasa. Hubungkan Kebutuhan, Temukan Solusinya.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ================= MODAL PRATINJAU E-BOOK CHECKLIST & TARIF ================= -->
+    <div id="ebook-preview-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-navy-950/75 backdrop-blur-xs p-4 overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-xl w-full shadow-2xl border border-slate-200 overflow-hidden my-8 animate-pop-in">
+            <div class="bg-navy-900 text-white px-6 py-4 flex items-center justify-between">
+                <div class="flex items-center gap-2.5">
+                    <i data-lucide="book-open" class="w-5 h-5 text-gold-400"></i>
+                    <h3 class="font-extrabold text-base sm:text-lg">E-Book: Checklist &amp; Standar Tarif 2026</h3>
+                </div>
+                <button onclick="closePreviewModal()" class="p-1.5 rounded-lg hover:bg-navy-800 text-slate-300 hover:text-white cursor-pointer">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+            <div class="p-6 space-y-4 max-h-[75vh] overflow-y-auto text-sm">
+                <div class="bg-navy-50 rounded-2xl p-4 border border-navy-100 flex items-center justify-between">
+                    <div>
+                        <span class="text-xs font-extrabold text-navy-900 block">Kode Voucher Aktif Anda:</span>
+                        <span class="font-mono text-base font-extrabold text-verified-700">SIPJASA50 (Diskon Rp 50.000)</span>
+                    </div>
+                    <button onclick="copyVoucherCode()" class="px-3 py-1.5 rounded-lg bg-navy-900 text-gold-400 text-xs font-bold cursor-pointer">
+                        Salin
+                    </button>
+                </div>
+
+                <div>
+                    <h4 class="font-extrabold text-navy-900 mb-2">1. Ringkasan Checklist Perawatan Rumah Bulanan</h4>
+                    <ul class="space-y-2 text-xs text-slate-700 bg-slate-50 p-4 rounded-2xl border border-slate-200/70">
+                        <li>✅ <strong>Minggu 1 (Kebersihan &amp; Sanitasi):</strong> Vakum kasur/sofa, bersihkan saluran kamar mandi, cek kebersihan tandon air.</li>
+                        <li>✅ <strong>Minggu 2 (Sistem Pendingin &amp; Elektronik):</strong> Cuci filter AC split, bersihkan kisi-kisi exhaust fan dapur.</li>
+                        <li>✅ <strong>Minggu 3 (Perpipaan &amp; Kran):</strong> Cek tekanan pompa air, periksa sambungan pipa bawah wastafel dari rembesan.</li>
+                        <li>✅ <strong>Minggu 4 (Struktur &amp; Pertukangan):</strong> Lumasi engsel pintu/jendela, cek plafon dari tanda kebocoran atap.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-extrabold text-navy-900 mb-2">2. Panduan Tarif Resmi Mitra Terverifikasi</h4>
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden text-xs">
+                        <div class="bg-slate-100 px-4 py-2 font-extrabold text-navy-900 flex justify-between">
+                            <span>Jenis Layanan</span>
+                            <span>Tarif Standar</span>
+                        </div>
+                        <div class="divide-y divide-slate-100">
+                            <div class="px-4 py-2.5 flex justify-between"><span>Cleaning Service Harian (2 Jam)</span><strong>Rp 120.000</strong></div>
+                            <div class="px-4 py-2.5 flex justify-between"><span>Cuci AC Split (0.5 - 2 PK)</span><strong>Rp 75.000</strong></div>
+                            <div class="px-4 py-2.5 flex justify-between"><span>Perbaikan Pipa / Kran Bocor</span><strong>Rp 95.000</strong></div>
+                            <div class="px-4 py-2.5 flex justify-between"><span>Jasa Pertukangan Umum</span><strong>Rp 125.000</strong></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-2 flex flex-col sm:flex-row gap-2.5">
+                    <button onclick="triggerEbookDownload()" class="flex-1 bg-gold-500 hover:bg-gold-400 text-navy-900 font-extrabold py-3 px-4 rounded-xl flex items-center justify-center gap-2 cursor-pointer">
+                        <i data-lucide="download" class="w-4 h-4"></i>
+                        <span>Simpan File Panduan (.TXT/PDF)</span>
+                    </button>
+                    <button onclick="closePreviewModal()" class="px-5 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold cursor-pointer">
+                        Tutup
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Toast Notification (No alert()) -->
+    <div id="toast-notification" class="fixed bottom-5 right-5 z-50 hidden items-center gap-2.5 bg-navy-900 text-white px-5 py-3.5 rounded-2xl shadow-xl border border-navy-700 text-xs sm:text-sm font-bold animate-pop-in">
+        <i data-lucide="check-circle-2" class="w-5 h-5 text-gold-400 shrink-0"></i>
+        <span id="toast-text">Berhasil!</span>
+    </div>
+
+    <!-- ================= VANILLA JAVASCRIPT ================= -->
+    <script>
+        // Render Lucide Icons
+        lucide.createIcons();
+
+        // Form Validation & Lead Capture Submission
+        function handleLeadSubmit(event) {
+            event.preventDefault();
+
+            const nameInput = document.getElementById("lead-name");
+            const contactInput = document.getElementById("lead-contact");
+            const categorySelect = document.getElementById("lead-category");
+
+            const errName = document.getElementById("err-name");
+            const errContact = document.getElementById("err-contact");
+
+            const nameVal = nameInput.value.trim();
+            const contactVal = contactInput.value.trim();
+            const categoryVal = categorySelect.value;
+
+            let isValid = true;
+
+            // Validate Name
+            if (nameVal.length < 2) {
+                errName.classList.remove("hidden");
+                nameInput.classList.add("border-red-500");
+                isValid = false;
+            } else {
+                errName.classList.add("hidden");
+                nameInput.classList.remove("border-red-500");
+            }
+
+            // Validate WhatsApp (digits >= 9) or Email format
+            const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contactVal);
+            const digitsOnly = contactVal.replace(/\D/g, "");
+            const isPhone = digitsOnly.length >= 9;
+
+            if (!isEmail && !isPhone) {
+                errContact.classList.remove("hidden");
+                contactInput.classList.add("border-red-500");
+                isValid = false;
+            } else {
+                errContact.classList.add("hidden");
+                contactInput.classList.remove("border-red-500");
+            }
+
+            if (!isValid) {
+                showToast("Mohon lengkapi nama dan nomor WhatsApp / Email Anda dengan benar.");
+                return;
+            }
+
+            // Populate Success State
+            document.getElementById("success-user-name").textContent = nameVal;
+            document.getElementById("success-user-category").textContent = categoryVal;
+
+            // Smooth Transition from Form to Unlocked Voucher & E-Book
+            document.getElementById("lead-form-container").classList.add("hidden");
+            document.getElementById("lead-success-container").classList.remove("hidden");
+
+            lucide.createIcons();
+            showToast("Selamat! Panduan & Voucher Rp 50.000 Anda telah terbuka.");
+        }
+
+        // Copy Voucher Code to Clipboard (Using document.execCommand for iframe compatibility)
+        function copyVoucherCode() {
+            const codeText = document.getElementById("voucher-code-text").textContent.trim();
+            const tempTextarea = document.createElement("textarea");
+            tempTextarea.value = codeText;
+            tempTextarea.style.position = "fixed";
+            tempTextarea.style.opacity = "0";
+            document.body.appendChild(tempTextarea);
+            tempTextarea.select();
+
+            try {
+                document.execCommand("copy");
+                const btnLabel = document.getElementById("copy-btn-label");
+                if (btnLabel) {
+                    btnLabel.textContent = "Tersalin!";
+                    setTimeout(() => {
+                        btnLabel.textContent = "Salin Kode";
+                    }, 2500);
+                }
+                showToast(`Kode voucher "${codeText}" berhasil disalin!`);
+            } catch (err) {
+                showToast(`Kode voucher Anda: ${codeText}`);
+            } finally {
+                document.body.removeChild(tempTextarea);
+            }
+        }
+
+        // Simulate / Trigger Downloadable Checklist & Rate Guide
+        function triggerEbookDownload() {
+            const guideContent = [
+                "=================================================================",
+                "SIPJasa - PANDUAN CHECKLIST PERAWATAN RUMAH & STANDAR TARIF 2026",
+                "Hubungkan Kebutuhan, Temukan Solusinya",
+                "=================================================================",
+                "",
+                "KODE VOUCHER PENGGUNA BARU ANDA: SIPJASA50",
+                "Nilai Potongan: Rp 50.000 (Berlaku untuk pemesanan pertama)",
+                "Metode Pembayaran: Tunai Setelah Pekerjaan Selesai",
+                "",
+                "-----------------------------------------------------------------",
+                "BAGIAN 1: CHECKLIST INSPEKSI RUMAH BULANAN",
+                "-----------------------------------------------------------------",
+                "[ ] Minggu 1: Bersihkan filter AC & cek saluran pembuangan air AC.",
+                "[ ] Minggu 2: Bersihkan saringan wastafel dapur & floor drain kamar mandi.",
+                "[ ] Minggu 3: Periksa kran air, sambungan pipa, dan tekanan pompa air.",
+                "[ ] Minggu 4: Cek plafon, sealant atap, serta engsel pintu & jendela.",
+                "",
+                "-----------------------------------------------------------------",
+                "BAGIAN 2: STANDAR TARIF TRANSPARAN MITRA TERVERIFIKASI 2026",
+                "-----------------------------------------------------------------",
+                "1. Jasa Kebersihan Rumah Harian (2 Jam)  : Rp 120.000",
+                "2. Cuci & Service AC Split (0.5 - 2 PK)  : Rp 75.000 / unit",
+                "3. Perbaikan Pipa & Kran Bocor           : Rp 95.000 / titik",
+                "4. Jasa Pertukangan & Perbaikan Ringan   : Rp 125.000 / kunjungan",
+                "",
+                "=================================================================",
+                "100% Mitra Terverifikasi Admin • Pesan Mudah di SIPJasa"
+            ].join("\n");
+
+            const blob = new Blob([guideContent], { type: "text/plain;charset=utf-8" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "Panduan-Checklist-Tarif-SIPJasa-2026.txt";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            showToast("Panduan Checklist & Standar Tarif 2026 sedang diunduh!");
+        }
+
+        // Preview Modal Controls
+        function openPreviewModal() {
+            const modal = document.getElementById("ebook-preview-modal");
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+            lucide.createIcons();
+        }
+
+        function closePreviewModal() {
+            const modal = document.getElementById("ebook-preview-modal");
+            modal.classList.add("hidden");
+            modal.classList.remove("flex");
+        }
+
+        // Smooth Scroll to Claim Card
+        function scrollToClaimForm() {
+            const card = document.getElementById("claim-card-wrapper");
+            card.scrollIntoView({ behavior: "smooth", block: "center" });
+            const nameField = document.getElementById("lead-name");
+            if (nameField && !nameField.offsetParent === null) {
+                setTimeout(() => nameField.focus(), 450);
+            }
+        }
+
+        // Custom Toast Helper
+        let toastTimeout;
+        function showToast(message) {
+            const toast = document.getElementById("toast-notification");
+            document.getElementById("toast-text").textContent = message;
+            toast.classList.remove("hidden");
+            toast.classList.add("flex");
+
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.add("hidden");
+                toast.classList.remove("flex");
+            }, 3400);
+        }
+    </script>
+</body>
+</html>
