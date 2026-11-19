@@ -745,42 +745,15 @@
 
         // Simulate / Trigger Downloadable Checklist & Rate Guide
         function triggerEbookDownload() {
-            const guideContent = [
-                "=================================================================",
-                "SIPJasa - PANDUAN CHECKLIST PERAWATAN RUMAH & STANDAR TARIF 2026",
-                "Hubungkan Kebutuhan, Temukan Solusinya",
-                "=================================================================",
-                "-----------------------------------------------------------------",
-                "BAGIAN 1: CHECKLIST INSPEKSI RUMAH BULANAN",
-                "-----------------------------------------------------------------",
-                "[ ] Minggu 1: Bersihkan filter AC & cek saluran pembuangan air AC.",
-                "[ ] Minggu 2: Bersihkan saringan wastafel dapur & floor drain kamar mandi.",
-                "[ ] Minggu 3: Periksa kran air, sambungan pipa, dan tekanan pompa air.",
-                "[ ] Minggu 4: Cek plafon, sealant atap, serta engsel pintu & jendela.",
-                "",
-                "-----------------------------------------------------------------",
-                "BAGIAN 2: STANDAR TARIF TRANSPARAN MITRA TERVERIFIKASI 2026",
-                "-----------------------------------------------------------------",
-                "1. Jasa Kebersihan Rumah Harian (2 Jam)  : Rp 120.000",
-                "2. Cuci & Service AC Split (0.5 - 2 PK)  : Rp 75.000 / unit",
-                "3. Perbaikan Pipa & Kran Bocor           : Rp 95.000 / titik",
-                "4. Jasa Pertukangan & Perbaikan Ringan   : Rp 125.000 / kunjungan",
-                "",
-                "=================================================================",
-                "100% Mitra Terverifikasi Admin • Pesan Mudah di SIPJasa"
-            ].join("\n");
-
-            const blob = new Blob([guideContent], { type: "text/plain;charset=utf-8" });
-            const url = URL.createObjectURL(blob);
+            // Membuat elemen link tersembunyi untuk mengunduh file PDF fisik
             const a = document.createElement("a");
-            a.href = url;
-            a.download = "Panduan-Checklist-Tarif-SIPJasa-2026.txt";
+            a.href = "E- Book SIPJASA.pdf"; // Sesuaikan dengan nama/path file PDF Anda
+            a.download = "E- Book SIPJASA.pdf";
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
-            URL.revokeObjectURL(url);
 
-            showToast("Panduan Checklist & Standar Tarif 2026 sedang diunduh!");
+            showToast("File PDF Panduan & Tarif 2026 berhasil diunduh!");
         }
 
         // Preview Modal Controls
